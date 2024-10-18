@@ -1,3 +1,5 @@
+from src.tile import render_tile
+
 class Map:
     def __init__(self):
         self.tiles = {}
@@ -7,3 +9,8 @@ class Map:
 
     def remove_tile(self, position):
         self.tiles.remove(position)
+
+    def render_map(self, canvas, size):
+        for position, tile in self.tiles.items():
+            row, col = position
+            render_tile(canvas, row, col, size, tile)
