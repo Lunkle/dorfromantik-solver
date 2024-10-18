@@ -12,3 +12,19 @@ The purpose of this project is to provide a tool that assists players in making 
 - Suggest optimal tile placements
 - Help players achieve high scores
 - Assist in completing in-game challenges
+
+## Visualization
+
+To visualize the game map as a hexagon tiling, you can run the `src/main.py` file. This will open a Tkinter window and display the hexagon tiles representing the game map.
+
+### Instructions
+
+1. Ensure you have all the required dependencies installed. You can install them using the following command:
+   ```
+   pip install -r requirements.txt
+   ```
+
+2. Run the `src/main.py` file to visualize the game map:
+   ```
+   python src/main.py
+   ```
