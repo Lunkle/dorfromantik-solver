@@ -4,9 +4,7 @@ import math
 def draw_hexagon(canvas, x, y, size, color):
     angle = math.pi / 3
     points = [
-        x + size * math.cos(i * angle) for i in range(6)
-    ] + [
-        y + size * math.sin(i * angle) for i in range(6)
+        (x + size * math.cos(i * angle), y + size * math.sin(i * angle)) for i in range(6)
     ]
     canvas.create_polygon(points, outline='black', fill=color, width=2)
 
